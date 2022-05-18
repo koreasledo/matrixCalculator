@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: 'Do Hyeon', sans-serif;
+  color: #333333;
+}
+
+body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainWrap {
+  width: 120rem;
+  height: 92rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightblue;
+}
+
+header {
+  width: 100%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .headerColor {
+  width: 100%;
+  height: 60%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .headerColor h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  text-shadow: -0.1rem -0.1rem 0 skyblue, 0.3rem 0.3rem 0 skyblue, 0.6rem 0.6rem 0 skyblue;
+}
+
+header .headerColor h1:hover {
+  color: #333333;
+  text-shadow: -0.1rem -0.1rem 0 #f5deff, 0.3rem 0.3rem 0 #f5deff, 0.6rem 0.6rem 0 #f5deff;
+}
+
+.headAlert {
+  width: 100%;
+  height: 5%;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 4.5rem;
+  border-top: 0.3rem solid whitesmoke;
+  border-bottom: 0.3rem solid whitesmoke;
+}
+
+.inputSection {
+  width: 100%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.inputSection .inputBox {
+  width: 25%;
+  height: 84%;
+  background-color: white;
+  border-radius: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inputSection .inputBox .boxName {
+  width: 80%;
+  height: 40%;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 4.5rem;
+  text-shadow: -0.05rem -0.05rem 0 #dadaff, 0.1rem 0.1rem 0 #dadaff, 0.3rem 0.3rem 0 #dadaff;
+}
+
+.inputSection .inputBox .inputArrayBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 40%;
+}
+
+.inputSection .inputBox .inputArrayBox .arrayInput {
+  width: 25%;
+  height: 70%;
+  border-radius: 1rem;
+  border: 0.2rem solid lightgray;
+  text-align: center;
+  font-size: 1.6rem;
+  -webkit-box-shadow: inset 0.1rem 0.1rem 0.1rem 0 rgba(255, 255, 255, 0.5), 0.3rem 0.3rem 0.4rem 0 rgba(0, 0, 0, 0.1), 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0.1rem 0.1rem 0.1rem 0 rgba(255, 255, 255, 0.5), 0.3rem 0.3rem 0.4rem 0 rgba(0, 0, 0, 0.1), 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.inputSection .inputBox .inputArrayBox .arrayInput::-webkit-outer-spin-button,
+.inputSection .inputBox .inputArrayBox .arrayInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.inputSection .inputBox .inputArrayBox .arrayInput:focus {
+  outline: none;
+}
+
+.inputSection .buttonBox {
+  width: 25%;
+  height: 84%;
+  background-color: white;
+  border-radius: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.inputSection .buttonBox1 {
+  width: 80%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inputSection button {
+  width: 28%;
+  height: 90%;
+  font-size: 1.7rem;
+  background-color: skyblue;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: inset 0.1rem 0.1rem 0.1rem 0 rgba(255, 255, 255, 0.5), 0.3rem 0.3rem 0.4rem 0 rgba(0, 0, 0, 0.1), 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0.1rem 0.1rem 0.1rem 0 rgba(255, 255, 255, 0.5), 0.3rem 0.3rem 0.4rem 0 rgba(0, 0, 0, 0.1), 0.2rem 0.2rem 0.3rem 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  border-radius: 1rem;
+}
+
+.inputSection button:hover {
+  background-color: white;
+}
+
+.inputSection #calcBtn {
+  display: none;
+}
+
+.arraySection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arraySection .arrayBox {
+  width: 100%;
+  min-height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.arraySection .arrayBox .outsideArrayBox {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.arraySection .arrayBox .outsideArrayBox .emptyInput {
+  width: 4rem;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.arraySection .arrayBox .outsideArrayBox .emptyInput::-webkit-outer-spin-button,
+.arraySection .arrayBox .outsideArrayBox .emptyInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.blankSpace {
+  width: 100%;
+  height: 5%;
+}
+
+.resultSection {
+  width: 100%;
+  min-height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resultSection .resultTbody {
+  display: inline-block;
+  width: 5rem;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: white;
+  border: 0.1rem solid black;
+  line-height: 3.9rem;
+}
+/*# sourceMappingURL=matrix.css.map */

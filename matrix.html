@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/matrix.js"></script>
+    <link rel="stylesheet" href="./css/matrix.css">
+    <title>Matrix</title>
+</head>
+
+<body>
+    <div class="mainWrap">
+        <!-- Header -->
+        <header>
+            <div class="headerColor">
+                <h1>Matrix Calulator</h1>
+            </div> 
+        </header>
+        <span class="headAlert">주의! 최대 행렬의 수는 7X7입니다.</span>
+        <!-- 행 열 입력 -->
+        <section class="inputSection">
+            <!-- Box 1 입력 -->
+            <div class="inputBox">
+                <h2 class="boxName">Box 1</h2>
+                <div class="inputArrayBox">
+                    <input id="x1Array" class="arrayInput" type="number" min="1" max="8" placeholder="행"/>
+                    <input id="y1Array" class="arrayInput" type="number" min="1" max="8" placeholder="열"/>
+                </div>
+            </div>
+            <!-- Box 2 입력 -->
+            <div class="inputBox">
+                <h2 class="boxName">Box 2</h2>
+                <div class="inputArrayBox">
+                    <input id="x2Array" class="arrayInput" type="number" min="1" max="8" placeholder="행"/>
+                    <input id="y2Array" class="arrayInput" type="number" min="1" max="8" placeholder="열"/>
+                </div>
+            </div>
+            <!-- 버튼들 -->
+            <div class="buttonBox">
+                <div class="buttonBox1">
+                    <button class="createArray" data-type="plus">덧셈</button>
+                    <button class="createArray" data-type="minus">뺄셈</button>
+                    <button class="createArray" data-type="multi">곱셈</button>
+                </div>
+                <div class="buttonBox1">
+                    <button id="inputRandom">랜덤</button>
+                    <button id="resetArray">초기화</button>
+                    <button id="calcBtn">계산</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 값 넣는 곳 -->
+        <section class="arraySection">
+            <div class="arrayBox" id="arrayBox">
+                <!-- 첫번째 행렬 입력 박스 -->
+                <div class="outsideArrayBox">
+                    <table>
+                        <tbody id="xArrayTbody">
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- 두번째 행렬 입력 박스 -->
+                <div class="outsideArrayBox">
+                    <table>
+                        <tbody id="yArrayTbody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <div class="blankSpace"></div>
+        <!-- 결과 나오는 곳 -->
+        <section class="resultSection">
+            <div id="resultBox">
+                <table>
+                    <tbody id="resultTbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

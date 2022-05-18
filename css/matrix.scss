@@ -1,0 +1,241 @@
+@charset 'utc-8';
+
+* { margin: 0; padding: 0; 
+  font-size: 10px;
+  font-family: 'Do Hyeon', sans-serif;
+  color: #333333;  
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainWrap {
+  width: 120rem;
+  height: 92rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: lightblue;
+}
+
+// header 부분
+
+header {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  .headerColor {
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font: {
+        size: 6rem;
+        weight: bold;
+      }
+      color: #333333;
+      text-align: center;
+      text-shadow: -0.1rem -0.1rem 0 skyblue,
+        0.3rem 0.3rem 0 skyblue,
+        0.6rem 0.6rem 0 skyblue;
+    }
+    h1:hover {
+      color: #333333;
+      text-shadow: -0.1rem -0.1rem 0 #f5deff,
+        0.3rem 0.3rem 0 #f5deff,
+        0.6rem 0.6rem 0 #f5deff;
+    }
+  }
+}
+
+.headAlert {
+  width: 100%;
+  height: 5%;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 4.5rem;
+  border-top: 0.3rem solid whitesmoke;
+  border-bottom: 0.3rem solid whitesmoke;
+}
+
+// 행 열 입력 섹션
+.inputSection {
+  width: 100%;
+  height: 15%;
+  //background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  .inputBox {
+    width: 25%;
+    height: 84%;
+    background-color: white;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .boxName {
+      width: 80%;
+      height: 40%;
+      font: {
+        size: 3.5rem;
+        weight: bold;
+      }
+      text-align: center;
+      //background-color: pink;
+      line-height: 4.5rem;
+      text-shadow: -0.05rem -0.05rem 0 rgb(218, 218, 255),
+        0.1rem 0.1rem 0  rgb(218, 218, 255),
+        0.3rem 0.3rem 0  rgb(218, 218, 255);
+    }
+    .inputArrayBox {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 80%;
+      height: 40%;
+      //background-color: lavender;
+
+      .arrayInput {
+        width: 25%;
+        height: 70%;
+        border-radius: 1rem;
+        border: 0.2rem solid lightgray;
+        text-align: center;
+        font-size: 1.6rem;
+        box-shadow:inset 0.1rem 0.1rem 0.1rem 0 rgba(255,255,255,.5),
+          0.3rem 0.3rem 0.4rem 0 rgba(0,0,0,.1),
+          0.2rem 0.2rem 0.3rem 0 rgba(0,0,0,.1);
+      }
+      .arrayInput::-webkit-outer-spin-button,
+      .arrayInput::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+      }
+      .arrayInput:focus {
+        outline: none;
+      }
+    }
+  }
+  .buttonBox {
+    width: 25%;
+    height: 84%;
+    background-color: white;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttonBox1 {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    //background-color: #f5deff;
+  }
+  button {
+    width: 28%;
+    height: 90%;
+    font: {
+      size: 1.7rem;
+    }
+    background-color: skyblue;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow:inset 0.1rem 0.1rem 0.1rem 0 rgba(255,255,255,.5),
+      0.3rem 0.3rem 0.4rem 0 rgba(0,0,0,.1),
+      0.2rem 0.2rem 0.3rem 0 rgba(0,0,0,.1);
+    border: 0;
+    border-radius: 1rem;
+  }
+  button:hover {
+    background-color: white;
+  }
+  #calcBtn {
+    display: none;
+  }
+}
+
+// 배열 넣는 곳
+.arraySection {
+  width: 100%;
+  // background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .arrayBox {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .outsideArrayBox{
+      width: 40%;
+      // background-color: yellow;
+      display: flex;
+      justify-content: center;
+
+      .emptyInput {
+        width: 4rem;
+        height: 3rem;
+        text-align: center;
+        font-size: 1.4rem;
+      }
+      .emptyInput::-webkit-outer-spin-button,
+      .emptyInput::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+      }
+    }
+  }
+  
+
+}
+.blankSpace {
+  width: 100%;
+  height: 5%;
+}
+// 결과 나오는 곳
+.resultSection {
+  width: 100%;
+  min-height: 0;
+  //background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .resultTbody {
+    display: inline-block;
+    width: 5rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: white;
+    border: 0.1rem solid black;
+    line-height: 3.9rem;
+  }
+}
